@@ -1,0 +1,20 @@
+/* @import must come before other statements */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom styles */
+@layer base {
+  body {
+    /* Apply the font-family using Tailwind's utility */
+    font-family: 'Raleway', sans-serif;
+  }
+
+  li {
+    @apply px-4; /* Apply padding */
+    @apply cursor-pointer; /* Apply pointer cursor */
+  }
+}
